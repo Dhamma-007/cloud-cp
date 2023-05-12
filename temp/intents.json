@@ -1,0 +1,200 @@
+{"intents": [
+       {"tag": "greeting",
+        "patterns": ["Hi there", "How are you", "Is anyone there?","Hey","Hola", "Hello", "Good day"],
+        "responses": ["Hello, thanks for asking", "Good to see you again", "Hi there, how can I help?"],
+        "context": [""]
+       },
+       {"tag": "goodbye",
+        "patterns": ["Bye", "See you later", "Goodbye", "Nice chatting to you, bye", "Till next time"],
+        "responses": ["See you!", "Have a nice day", "Bye! Come back again soon."],
+        "context": [""]
+       },
+       {"tag": "thanks",
+        "patterns": ["Thanks", "Thank you", "That's helpful", "Awesome, thanks", "Thanks for helping me"],
+        "responses": ["Happy to help!", "Any time!", "My pleasure"],
+        "context": [""]
+       },
+       {"tag": "noanswer",
+        "patterns": [],
+        "responses": ["Sorry, can't understand you", "Please give me more info", "Not sure I understand"],
+        "context": [""]
+       },
+       {"tag": "options",
+        "patterns": ["How you could help me?", "What you can do?", "What help you provide?", "How you can be helpful?", "What support is offered"],
+        "responses": ["I can guide you through Adverse drug reaction list, Blood pressure tracking, Hospitals and Pharmacies", "Offering support for Adverse drug reaction, Blood pressure, Hospitals and Pharmacies"],
+        "context": [""]
+       },
+       {"tag": "adverse_drug",
+        "patterns": ["How to check Adverse drug reaction?", "Open adverse drugs module", "Give me a list of drugs causing adverse behavior", "List all drugs suitable for patient with adverse reaction", "Which drugs dont have adverse reaction?" ],
+        "responses": ["Navigating to Adverse drug reaction module"],
+        "context": [""]
+       },
+       {"tag": "blood_pressure",
+        "patterns": ["Open blood pressure module", "Task related to blood pressure", "Blood pressure data entry", "I want to log blood pressure results", "Blood pressure data management" ],
+        "responses": ["Navigating to Blood Pressure module"],
+        "context": [""]
+       },
+       {"tag": "blood_pressure_search",
+        "patterns": ["I want to search for blood pressure result history", "Blood pressure for patient", "Load patient blood pressure result", "Show blood pressure results for patient", "Find blood pressure results by ID" ],
+        "responses": ["Please provide Patient ID", "Patient ID?"],
+        "context": ["search_blood_pressure_by_patient_id"]
+       },
+       {"tag": "search_blood_pressure_by_patient_id",
+        "patterns": [],
+        "responses": ["Loading Blood pressure result for Patient"],
+        "context": [""]
+       },
+       {"tag": "pharmacy_search",
+        "patterns": ["Find me a pharmacy", "Find pharmacy", "List of pharmacies nearby", "Locate pharmacy", "Search pharmacy" ],
+        "responses": ["Please provide pharmacy name"],
+        "context": ["search_pharmacy_by_name"]
+       },
+       {"tag": "search_pharmacy_by_name",
+        "patterns": [],
+        "responses": ["Loading pharmacy details"],
+        "context": [""]
+       },
+       {"tag": "hospital_search",
+        "patterns": ["Lookup for hospital", "Searching for hospital to transfer patient", "I want to search hospital data", "Hospital lookup for patient", "Looking up hospital details" ],
+        "responses": ["Please provide hospital name or location"],
+        "context": ["search_hospital_by_params"]
+       },
+       {"tag": "search_hospital_by_params",
+        "patterns": [],
+        "responses": ["Please provide hospital type"],
+        "context": ["search_hospital_by_type"]
+       },
+       {"tag": "search_hospital_by_type",
+        "patterns": [],
+        "responses": ["Loading hospital details"],
+        "context": [""]
+       },
+       {"tag": "paracetamol",
+        "patterns": ["paracetamol"],
+        "responses": ["Paracetamol is a commonly used medicine that can help treat pain and reduce a high temperature (fever)"],
+        "context": [""]
+       },{"tag": "headache",
+        "patterns": ["headache", "pain in backside of brain","Cause of headache"],
+        "responses": ["Headaches may be attributed to a host of reasons ranging from lack of sleep, dehydration, stress and anxiety, and hormonal changes to exposure to bright light and loud noise"],
+        "context": [""]
+       },
+
+{"tag": "headache_sympthoms",
+        "patterns": ["headache", "sympthoms of headache","Cause of headache"],
+        "responses": [" loss of appetite, facial pain and pressure, dizziness, and blurred vision."],
+        "context": [""]
+       },
+
+	{"tag": "headache_treatment",
+        "patterns": ["headache treatment", "how to get cure from headche","headache remedy"],
+        "responses": [" Resting in a quiet dark room, administering a hot or cold compress, gentle head massages, and over-the-counter medication may help soothe a headache."],
+        "context": [""]
+       },
+
+{"tag": "commonCold_cause",
+        "patterns": ["common cold cause"],
+        "responses": [" viruses can cause a cold, the rhinovirus is the most common cause of the common cold."],
+        "context": [""]
+       },
+
+{"tag": "commonCold_Symptoms",
+        "patterns": ["common cold symptoms"],
+        "responses": [" runny or stuffy nose, sore throat, cough, and congestion."],
+        "context": [""]
+       },
+
+{"tag": "commonCold_treatment",
+        "patterns": ["common cold treatment", "how to get cure from common cold","common cold remedy"],
+        "responses": [" Most cases are mild, so you should be able to treat yours with plenty of rest, proper hydration and over-the-counter nasal decongestants. To avoid catching a cold, wash your hands regularly and avoid touching your face. Strengthening your immune system by eating healthy, getting enough sleep and exercising also helps to keep those pesky bugs away."],
+        "context": [""]
+       },
+
+
+
+{"tag": "sorethroat_cause",
+        "patterns": ["sore throat cause"],
+        "responses": ["  an inflammation of the pharynx (the membrane-lined cavity behind the nose and mouth) due to a viral or bacterial infection. It may also be caused by allergies, dry air or exposure to second-hand smoke."],
+        "context": [""]
+       },
+
+
+
+{"tag": "sorethroat_symptoms",
+        "patterns": ["sore throat symptoms"],
+        "responses": ["  Sore, dry or scratchy throat."],
+        "context": [""]
+       },
+
+
+
+{"tag": "sorethroat_treatment",
+        "patterns": ["sore throat treatment", "how to get cure from sore throat","sore throat remedy"],
+        "responses": ["  This can be relieved by drinking plenty of fluids, gargling with warm salt water and taking throat lozenges to soothe the pain, but if the pain persists, approach an ENT doctor.To prevent pharyngitis, avoid sharing food, drinks and eating utensils and maintain good hygiene. It also helps to avoid smoking and inhaling second-hand smoke."],
+        "context": [""]
+       },
+
+
+{"tag": "cough_cause",
+        "patterns": ["cough cause"],
+        "responses": ["  Coughs are usually a result of an upper or lower respiratory tract infection – like the flu, which is caused by that pesky rhinovirus – or by something else, like acid reflux, asthma or smoking. If a cough persists for more than 3 weeks, it’s worth taking a visit to your doctor to rule out anything serious."],
+        "context": [""]
+       },
+
+
+{"tag": "cough_sympthoms",
+        "patterns": ["cough symptoms"],
+        "responses": ["  worsening cough, swelling in the neck, changes in the voice and difficulty breathing may also be seen."],
+        "context": [""]
+       },
+
+
+{"tag": "cough_treatment",
+        "patterns": ["cough treatment", "how to get cure from cough","cough remedy"],
+        "responses": ["  A cough caused by a viral infection clears up on its own. Honey and lemon are also great home remedies that can help relieve cough symptoms. If a cough persists for more than 3 weeks, it’s worth taking a visit to your doctor to rule out anything serious."],
+        "context": [""]
+       },
+
+
+{"tag": "fever_cause",
+        "patterns": ["fever cause"],
+        "responses": ["  autoimmune condition or a hormone disorder."],
+        "context": [""]
+       },
+
+
+{"tag": "fever_sympthoms",
+        "patterns": ["fever symptoms" ],
+        "responses": ["  A body temperature that is higher than normal (i.e. 37°C), shivers and feeling cold, sweating, low appetite, lack of energy and feeling sleepy."],
+        "context": [""]
+       },
+
+
+{"tag": "fever_treatment",
+        "patterns": ["fever treatment", "how to get cure from fever","fever remedy"],
+        "responses": ["  Fevers due to bacteria may be treated with an antibiotic. For a viral fever, an NSAID may be given to relieve symptoms.The best way to prevent a fever is to avoid being exposed to infectious agents. This can be done by practicing good hygiene – washing hands regularly, avoid touching your face, and by avoiding the sharing of eating utensils."],
+        "context": [""]
+       },
+
+
+{"tag": "high cholesterol_cause",
+        "patterns": ["high cholesterol_cause"],
+        "responses": [" unbalanced diet, insufficient exercise, being overweight or obese, smoking or heavy alcohol use."],
+        "context": [""]
+       },
+
+
+{"tag": "high cholesterol_sympthoms",
+        "patterns": ["high cholesterol symptoms"],
+        "responses": ["  Symptoms are usually only present at an advanced state, manifesting as a heart attack or stroke."],
+        "context": [""]
+       },
+
+
+{"tag": "high cholesterol_treatment",
+        "patterns": ["high cholesterol treatment", "how to get cure from high cholesterol","high cholesterol remedy"],
+        "responses": ["  By  reduce the risk of heart disease and stroke. You should go for regular cholesterol screening every couple of years."],
+        "context": [""]
+       }
+  ]
+}
+
